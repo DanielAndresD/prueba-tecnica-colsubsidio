@@ -1,3 +1,8 @@
+# Files from project
+Prueba_Tecnico_Datos.xlsx
+# Folders from project
+Data/
+Clean_Data/
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
