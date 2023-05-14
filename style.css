@@ -1,0 +1,115 @@
+.titulo {
+	text-align: center;
+	color: #0594fb ;
+}
+
+
+
+.graficos {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.grafico {
+	max-width: 100%;
+	height: auto;
+	margin: 10px;
+}
+
+@media only screen and (min-width: 600px) {
+	.grafico {
+		width: 45%;
+	}
+}
+
+/* Estilo general del navbar */
+.navbar {
+	background-color: white;
+	color: #0594fb;
+	padding: 10px;
+}
+
+/* Centrar el título */
+.title {
+	text-align: center;
+}
+
+/* Estilo del título */
+.title h1 {
+	font-size: 4em;
+	margin: 0;
+	padding: 0;
+}
+
+.panel-title {
+	background-color: #2a4868;
+	color: #fff;
+	font-size: 24px;
+	font-weight: bold;
+	padding: 10px;
+	text-align: center;
+  }
+
+
+  @font-face {
+	font-family: 'Droid Arabic Kufi';
+	src: url('tanseek-modern-pro-arabic-bold.ttf') format('truetype');
+  }
+  * {
+	font-family: 'Droid Arabic Kufi', sans-serif;
+
+
+
+	.panel-footer {
+		background-color: #f2f2f2;
+		padding: 20px;
+		text-align: center;
+	  }
+	  
+	  .author-info {
+		font-size: 30px;
+		font-family: 'Droid Arabic Kufi', sans-serif;
+		color: #555;
+	  }
+	  
+	  .author-info h4 {
+		margin: 0;
+		font-size: 50px;
+	  }
+	  
+	
+	  
+  }  
+  p {
+	text-align: justify;
+	text-align-last: center;
+  }
+
+  .container {
+	display: flex;
+	flex-wrap: wrap;
+  }
+  
+  .panel {
+	flex-basis: 100%;
+  }
+  
+  .flex-container {
+	display: flex;
+	flex-direction: row;
+  }
+  
+  .panel1 {
+	flex-grow: 1;
+	background-color: gray;
+	padding: 20px;
+  }
+  
+  .panel2 {
+	flex-grow: 2;
+	background-color: lightgray;
+	padding: 20px;
+  }
+  
