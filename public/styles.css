@@ -1,0 +1,211 @@
+/* Estilos generales */
+
+body {
+	font-family: 'tanseek-modern-pro-arabic-bold', sans-serif;
+	font-size: 30px;
+	color: #333;
+	background-color: #f0ecec;
+	line-height: 20px; /* valor en píxeles */
+}
+
+@font-face {
+	font-family: 'tanseek-modern-pro-arabic-bold';
+	src: url('tanseek-modern-pro-arabic-bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+  }
+
+/* Encabezado */
+
+header {
+	background-color: #005a9c;
+	color: #fff;
+	padding: 20px;
+}
+
+header h1 {
+	font-size: 60px;
+	margin: 0;
+	text-align: center;
+}
+
+
+nav {
+	margin-top: 20px;
+}
+
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+nav li {
+	display: inline-block;
+	margin-right: 20px;
+}
+
+nav a {
+	color: #fff;
+	text-decoration: none;
+}
+
+nav a:hover {
+	text-decoration: underline;
+}
+
+/* Contenido principal */
+
+main {
+	margin: 20px;
+}
+
+section {
+	margin-bottom: 40px;
+}
+
+h2 {
+	font-size: 30px;
+	margin: 0 0 20px 0;
+	color: #005a9c;
+	text-align: center;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	margin-bottom: 10px;
+}
+
+form label {
+	display: block;
+	margin-bottom: 10px;
+}
+
+
+
+
+/* Estilo para el panel */
+.panel {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+    
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    max-width: 1200px;
+
+	
+  justify-content: center;
+  align-items: center;
+}
+
+/* Estilo para la sección izquierda */
+.panel-izq {
+    flex: 2;
+    padding: 20px;
+}
+
+/* Estilo para la sección derecha */
+.panel-der {
+    flex: 3;
+    padding: 20px;
+}
+.panel > div {
+	flex: 1 0 20%; /* 20% de ancho para cada gráfico */
+	margin: 10px; /* margen entre los gráficos */
+  }
+
+
+/* Estilo para el párrafo de la sección izquierda */
+p {
+    font-size: 25px;
+    text-align: justify;
+	line-height: 20px; /* valor en píxeles */
+}
+
+/* Estilo para la imagen de la sección derecha */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+.container {
+	display: flex;
+	flex-wrap: wrap;
+  }
+  
+  .left-panel {
+	flex-basis: 100%;
+	display: flex;
+	flex-wrap: wrap;
+  }
+  
+  .left-panel .panel-section {
+	flex-basis: calc(50% - 20px);
+	margin-right: 20px;
+  }
+  
+  .left-panel .panel-section:last-child {
+	margin-right: 0;
+  }
+  
+  .left-panel .panel-section p {
+	font-size: 1.2em;
+	line-height: 1.5;
+  }
+  
+  .left-panel .panel-section img {
+	width: 100%;
+  }
+  
+  .right-panel {
+	flex-basis: 100%;
+  }
+  
+  .right-panel img {
+	width: 100%;
+  }
+  
+  @media screen and (min-width: 768px) {
+	.container {
+	  display: grid;
+	  grid-template-columns: 2fr 3fr;
+	  grid-gap: 20px;
+	}
+  
+	.left-panel {
+	  flex-basis: auto;
+	  grid-row: 1 / 2;
+	  display: flex;
+	  flex-wrap: wrap;
+	}
+  
+	.left-panel .panel-section {
+	  flex-basis: 100%;
+	  margin-right: 0;
+	}
+  
+	.right-panel {
+	  flex-basis: auto;
+	  grid-row: 1 / 2;
+	}
+  
+	.left-panel .panel-section:first-child {
+	  flex-basis: 60%;
+	  margin-right: 20px;
+	}
+  
+	.left-panel .panel-section:last-child {
+	  flex-basis: 40%;
+	  margin-right: 0;
+	}
+  }
+  
